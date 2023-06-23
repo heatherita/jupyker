@@ -63,6 +63,14 @@ jupyker: jupyter notebooks packaged in docker container. Cute, eh?
 
 ```docker system prune -a```
 
+##### Delete all containers using the following command:
+
+```docker rm -f $(docker ps -a -q)```
+
+##### Delete all volumes using the following command:
+
+```docker volume rm $(docker volume ls -q)```
+
 ###### options for starting docker daemon
 
 ```sudo /usr/bin/dockerd --help```
