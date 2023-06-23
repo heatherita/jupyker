@@ -67,9 +67,14 @@ jupyker: jupyter notebooks packaged in docker container. Cute, eh?
 
 ```sudo /usr/bin/dockerd --help```
 
-#### jupyter commands:
+#### jupyter urls:
 
-```https://localhost:8888/jupyter/minimal-notebook```
+```http://localhost:8888/lab?token=```
+
+##### enter pw configured in docker-compose.yml, should wind up:
+
+```http://localhost:8888/lab```
+
 -----------------------
 
 ### TROUBLESHOOTING
