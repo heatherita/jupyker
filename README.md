@@ -1,24 +1,6 @@
 ## jupyker
 jupyker: jupyter notebooks packaged in docker container. Cute, eh?
 
-#### First, docker commands:
-
-##### bring up container
-
-```docker-compose up```
-
-##### shut down container
-
-```docker-compose down```
-
-##### view reclaimable memory
-
-```docker system df```
-
-##### clean up total reclaimable size for images, network, volume
-
-```docker system prune -a```
-
 #### Installing Docker on Ubuntu
 
 ```https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04```
@@ -37,17 +19,49 @@ jupyker: jupyter notebooks packaged in docker container. Cute, eh?
 
 ```sudo systemctl status docker```
 
+##### To avoid using sudo with every docker command:
+
+```sudo usermod -aG docker ${USER}```
+
+```su - ${USER}```
+
+###### To confirm you are now in docker group, type 
+
+```groups```
+
+###### Output should include
+
+```sudo docker```
+
 ##### docker system file
 
 ```/lib/systemd/system/docker.service```
 
-#### docker daily commands
+#### docker admin commands
 
 ```sudo systemctl status docker```
 
 ```sudo systemctl start docker```
 
 ```sudo systemctl stop docker```
+
+#### First, docker commands:
+
+##### bring up container
+
+```docker-compose up```
+
+##### shut down container
+
+```docker-compose down```
+
+##### view reclaimable memory
+
+```docker system df```
+
+##### clean up total reclaimable size for images, network, volume
+
+```docker system prune -a```
 
 ###### options for starting docker daemon
 
