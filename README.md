@@ -11,6 +11,9 @@ docker system df
 #clean up total reclaimable size for images, network, volume
 docker system prune -a
 
+#once docker container is UP should be able to run jupyter like this:
+https://localhost:8888/jupyter/minimal-notebook
+
 #Installing Docker on Ubuntu
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04
 #docker system file
