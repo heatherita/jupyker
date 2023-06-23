@@ -3,7 +3,7 @@ jupyker: jupyter notebooks packaged in docker container. Cute, eh?
 
 First, docker commands:
 bring up container
-{{{docker-compose up}}}
+docker-compose up
 #shut down container
 docker-compose down
 #view reclaimable memory
